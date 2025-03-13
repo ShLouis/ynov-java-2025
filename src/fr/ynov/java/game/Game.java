@@ -29,13 +29,18 @@ public class Game {
         System.out.println("1:ROCK ");
         System.out.println("2:PAPER ");
         System.out.println("3:SCISSORS ");
-        int choice = sc.nextInt();
-        return switch (choice) {
-            case 1 -> Items.ROCK;
-            case 2 -> Items.PAPER;
-            case 3 -> Items.SCISSORS;
-            default -> null;
-        };
+
+        try {
+            int choice = sc.nextInt();
+            return switch (choice) {
+                case 1 -> Items.ROCK;
+                case 2 -> Items.PAPER;
+                case 3 -> Items.SCISSORS;
+                default -> null;
+            };
+        } catch (Exception e){
+            return null;
+        }
     }
 
     private void compare(){
