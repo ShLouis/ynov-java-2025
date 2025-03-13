@@ -33,9 +33,6 @@ public class Person {
     }
 
     public int getAge() {
-        int year = this.dateOfBirth.getYear();
-        int month = this.dateOfBirth.getMonthValue();
-        int day = this.dateOfBirth.getDayOfMonth();
         LocalDate currentDate = LocalDate.now();
         return currentDate.compareTo(this.dateOfBirth);
 
