@@ -155,9 +155,9 @@ You should respect the Java naming conventions and the best practices (avoid pub
 Commit and push your code as soon as possible to keep track of your work (and avoid losing it).  
 Use abstract classes, interfaces, enums, etc. when needed or when you think it's a good idea.
 
-### 1. CarType Enum
+### 1. VehicleType Enum
 
-Create an enum `CarType` that contains the following values:
+Create an enum `VehicleType` that contains the following values:
 - `SEDAN`
 - `SUV`
 - `SPORT`
@@ -170,12 +170,12 @@ Create a class `Vehicle` with the following attributes:
 - `plate` (String)
 - `brand` (String or Brand enum if you want to create it)
 - `model` (String)
-- `type` (CarType)
+- `type` (VehicleType)
 - `year` (int)
 
-### 3. Car, Truck, Van, SportCar, Sedan, SUV Classes
+### 3. Truck, Van, SportCar, Sedan, SUV Classes
 
-Create classes that extend the `Vehicle` class for each type of vehicle. You should call a super constructor with the attributes of the vehicle.
+Create classes that extends the `Vehicle` class for each type of vehicle. You should call a super constructor with the attributes of the vehicle.
 
 ### 4. Rentable Interface
 
@@ -211,3 +211,20 @@ The system should not allow 2 vehicles to have the same plate.
 
 With Scanner, updates your main method (maybe it's preferable to create a new class for the main method) to display a menu to the user to interact with the system.  
 The user should be able to add a vehicle, rent a vehicle, display the list of vehicles, etc.
+
+## GUI
+
+### 1. Rock, Paper, Scissors game
+
+Updates your Rock, Paper, Scissors game to be able to use a GUI.  
+Try to use buttons, labels, text fields, etc. to create a beautiful interface, and if you want, you can use images for the Rock, Paper, Scissors.  
+
+Don't forget to display the result & the current score.  
+
+Think about the structure of your code, maybe it's better to separate the logic of the game from the GUI.  
+
+You can creates any frames that you want, for example you can start the game by displaying a launch screen and ask user what he want to do (play, see the leaderboard, etc.).
+
+### 3. Puissance 4
+
+Create a Java program that plays the Puissance 4 game. Follow all the best practices from previous exercises and creates a GUI.
